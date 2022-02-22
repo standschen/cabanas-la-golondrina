@@ -1,0 +1,106 @@
+/*------------------- Estilos Generales -----------------------*/
+
+@import "./variables";
+@import "./media-queries";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 500;
+
+  background-color: $earthy;
+
+  overflow: auto;
+}
+
+/*main {
+    padding-left: 30px;
+  }*/
+
+main div h2 {
+  color: #066b17;
+
+  font-weight: 525;
+
+  font-size: 2rem;
+
+  margin-left: 0px;
+  margin-top: 17px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  padding-top: 20px;
+  padding-bottom: $pb-standard * 2;
+  font-size: 1.5rem;
+}
+
+section ul li {
+  color: $navyblue;
+  line-height: 30px;
+  list-style-type: square;
+}
+
+p {
+  color: $deepgreen;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: $pb-standard;
+  line-height: 25px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+th {
+  color: $deepgreen;
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+}
+
+tr {
+  color: $black;
+}
+
+hr {
+  border-color: $black;
+  height: 0px;
+
+  margin-top: 10px;
+}
+
+.bordeNegro {
+  border-color: $black;
+}
+
+/*-------- 404 --------*/
+
+.error__btn {
+  background-color: $earthy;
+  border-color: $deepgreen;
+  border-width: 0.1rem;
+  font-size: 1rem;
+}
+
+.error__img {
+  width: 50%;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 75%;
+  }
+}

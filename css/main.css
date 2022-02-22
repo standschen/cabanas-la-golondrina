@@ -1,0 +1,1297 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*------------------- Estilos Generales -----------------------*/
+/*---------------- MEDIA QUERIES ----------------*/
+@media screen and (max-width: 767px) {
+  /*--- Header ---*/
+  .header .nav .nav__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+  .header .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-flow: none;
+    flex-flow: none;
+    gap: 1.2rem;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .header .nav .nav__list .nav__item {
+    padding: 0px 0px;
+  }
+  /*--- Index ---*/
+  .index {
+    width: 100%;
+  }
+  .index__contenedorleyenda {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .index__contenedorleyenda__leyenda {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    padding-top: 15px;
+  }
+  .index__carousel {
+    margin-bottom: 10px;
+  }
+  .index__contenedorvideo {
+    width: 90%;
+  }
+  .index__contenedorvideo__video {
+    width: 100%;
+    height: 10rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  /*--- Footer ---*/
+  .footer {
+    gap: 0.75rem;
+    padding-top: 0 px;
+  }
+  .footer__contenedorCottage__cottage {
+    margin-top: 2px;
+    width: 70px;
+    height: 70px;
+  }
+  .footer__contenedorestexto__texto {
+    margin: 5px;
+    text-align: start;
+    padding-top: 5px;
+    padding-bottom: 2px;
+  }
+  .footer__contenedorrrss__logos {
+    margin: 0px 5px;
+    width: 35px;
+    height: 35px;
+  }
+  /*------ Servicios ------*/
+  /*--- Ubicación ---*/
+  .ubicacion__contenedormapa__mapa {
+    width: 100%;
+    height: 18.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .ubicacion__contenedorfoto__vistaAngosturaDos {
+    width: 100%;
+    height: auto;
+  }
+  /*--- Contacto ---*/
+  .contacto__form__fieldset {
+    margin-right: 0px;
+  }
+  .contacto__form__fieldset__textarea {
+    width: 100%;
+  }
+  /*--- Nosotros ---*/
+  .nosotros__parrafo {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*--- Header ---*/
+  .header .nav .nav__logo {
+    width: 6rem;
+    height: 6rem;
+  }
+  .header .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-flow: none;
+    flex-flow: none;
+    gap: 1.2rem;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .header .nav .nav__list .nav__item {
+    padding: 0px;
+  }
+  /*--- Index ---*/
+  .index {
+    width: 100%;
+  }
+  .index__contenedorleyenda {
+    margin-bottom: 10px;
+  }
+  .index__contenedorleyenda__leyenda {
+    font-size: 100%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0px 5px;
+    padding-top: 15px;
+  }
+  .index__carousel {
+    width: 100%;
+  }
+  .index__contenedorvideo {
+    width: 100%;
+    height: 22.5rem;
+  }
+  .index__contenedorvideo__video {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+  }
+  /*----- Footer -----*/
+  .footer {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .footer__contenedorestexto {
+    width: 25.437%;
+  }
+  .footer__contenedorestexto__texto {
+    margin: 5px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    padding-right: 0px;
+    text-align: start;
+  }
+  .footer__contenedorrrss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer__contenedorrrss__logos {
+    margin: 15px 3px 5px 3px;
+    width: 25px;
+    height: 25px;
+  }
+  /*--- Servicios ---*/
+  /*--- Ubicación ---*/
+  .ubicacion__contenedormapa__mapa {
+    width: 100%;
+    height: 25.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .ubicacion__contenedorfoto__vistaAngosturaDos {
+    width: 100%;
+    height: auto;
+  }
+  /*--- Contacto ---*/
+  .contacto__form__fieldset__textarea {
+    width: 120%;
+  }
+  /*--- Nosotros ---*/
+  .nosotros__parrafo {
+    padding-right: 0px;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  background-color: #ebc263;
+  overflow: auto;
+}
+
+/*main {
+    padding-left: 30px;
+  }*/
+main div h2 {
+  color: #066b17;
+  font-weight: 525;
+  font-size: 2rem;
+  margin-left: 0px;
+  margin-top: 17px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+section ul li {
+  color: #3c4d99;
+  line-height: 30px;
+  list-style-type: square;
+}
+
+p {
+  color: #055f14;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+th {
+  color: #055f14;
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+}
+
+tr {
+  color: black;
+}
+
+hr {
+  border-color: black;
+  height: 0px;
+  margin-top: 10px;
+}
+
+.bordeNegro {
+  border-color: black;
+}
+
+/*-------- 404 --------*/
+.error__btn {
+  background-color: #ebc263;
+  border-color: #055f14;
+  border-width: 0.1rem;
+  font-size: 1rem;
+}
+
+.error__img {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .error__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .error__img {
+    width: 75%;
+  }
+}
+
+/*---------------- Header ----------------*/
+.header .nav {
+  background-image: url(../assets/img/arrayanes1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.header .nav .nav__logo {
+  background-color: rgba(235, 194, 99, 0.8);
+  opacity: 0.75;
+  width: 8rem;
+  height: 8rem;
+}
+
+.header .nav .nav__list {
+  background-color: #77091b;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header .nav .nav__list .nav__item {
+  list-style-type: none;
+  list-style-position: outside;
+  letter-spacing: 0.75px;
+  position: relative;
+  padding: 8px 0px;
+  display: inline-block;
+}
+
+.header .nav .nav__list .nav__item .nav__link {
+  color: #ebc263 !important;
+  display: block;
+  font-size: 1.07rem;
+  font-weight: 425;
+  padding: 0px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.header .nav .nav__list .nav__item .nav__link:hover {
+  color: #07791a !important;
+  background-color: #77091b;
+}
+
+/*---------------- Footer ----------------*/
+.footer {
+  background: #77091b;
+  background: -webkit-gradient(linear, left top, right top, color-stop(15%, #77091b), color-stop(72%, #c7071e), to(#c11f1f));
+  background: linear-gradient(90deg, #77091b 15%, #c7071e 72%, #c11f1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#77091b",endColorstr="#c11f1f",GradientType=1);
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.footer__contenedorCottage__cottage {
+  width: 90px;
+  height: 90px;
+  margin-top: 20px;
+  -ms-flex-preferred-size: 90px;
+  flex-basis: 90px;
+  -ms-flex-negative: 5;
+  flex-shrink: 5;
+}
+
+.footer__contenedorestexto__texto {
+  color: #ebc263;
+  font-style: italic;
+  letter-spacing: 0.3px;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 7px;
+  margin-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-right: 10px;
+  line-height: 30px;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+.footer__contenedorrrss__logos {
+  width: 45px;
+  height: 45px;
+  background-color: #99071e;
+  /*#77091b;*/
+  margin-top: 17px;
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+}
+
+/*---------------- Index ----------------*/
+.index {
+  width: 100%;
+  height: auto;
+}
+
+.index__contenedorleyenda__leyenda {
+  color: #3c4d99;
+  font-size: 1.182rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.index__carousel {
+  margin-bottom: 30px;
+  /* resolver lógica de left y right */
+}
+
+.index__carousel .carousel-control-prev {
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.001)));
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.001));
+}
+
+.index__carousel .carousel-control-next {
+  right: 0;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.001)));
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.001));
+}
+
+.index__contenedorvideo__video {
+  padding-bottom: 10px;
+}
+
+/*---------------- MEDIA QUERIES ----------------*/
+@media screen and (max-width: 767px) {
+  /*--- Header ---*/
+  .header .nav .nav__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+  .header .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-flow: none;
+    flex-flow: none;
+    gap: 1.2rem;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .header .nav .nav__list .nav__item {
+    padding: 0px 0px;
+  }
+  /*--- Index ---*/
+  .index {
+    width: 100%;
+  }
+  .index__contenedorleyenda {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .index__contenedorleyenda__leyenda {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    padding-top: 15px;
+  }
+  .index__carousel {
+    margin-bottom: 10px;
+  }
+  .index__contenedorvideo {
+    width: 90%;
+  }
+  .index__contenedorvideo__video {
+    width: 100%;
+    height: 10rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  /*--- Footer ---*/
+  .footer {
+    gap: 0.75rem;
+    padding-top: 0 px;
+  }
+  .footer__contenedorCottage__cottage {
+    margin-top: 2px;
+    width: 70px;
+    height: 70px;
+  }
+  .footer__contenedorestexto__texto {
+    margin: 5px;
+    text-align: start;
+    padding-top: 5px;
+    padding-bottom: 2px;
+  }
+  .footer__contenedorrrss__logos {
+    margin: 0px 5px;
+    width: 35px;
+    height: 35px;
+  }
+  /*------ Servicios ------*/
+  /*--- Ubicación ---*/
+  .ubicacion__contenedormapa__mapa {
+    width: 100%;
+    height: 18.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .ubicacion__contenedorfoto__vistaAngosturaDos {
+    width: 100%;
+    height: auto;
+  }
+  /*--- Contacto ---*/
+  .contacto__form__fieldset {
+    margin-right: 0px;
+  }
+  .contacto__form__fieldset__textarea {
+    width: 100%;
+  }
+  /*--- Nosotros ---*/
+  .nosotros__parrafo {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*--- Header ---*/
+  .header .nav .nav__logo {
+    width: 6rem;
+    height: 6rem;
+  }
+  .header .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-flow: none;
+    flex-flow: none;
+    gap: 1.2rem;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .header .nav .nav__list .nav__item {
+    padding: 0px;
+  }
+  /*--- Index ---*/
+  .index {
+    width: 100%;
+  }
+  .index__contenedorleyenda {
+    margin-bottom: 10px;
+  }
+  .index__contenedorleyenda__leyenda {
+    font-size: 100%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0px 5px;
+    padding-top: 15px;
+  }
+  .index__carousel {
+    width: 100%;
+  }
+  .index__contenedorvideo {
+    width: 100%;
+    height: 22.5rem;
+  }
+  .index__contenedorvideo__video {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+  }
+  /*----- Footer -----*/
+  .footer {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .footer__contenedorestexto {
+    width: 25.437%;
+  }
+  .footer__contenedorestexto__texto {
+    margin: 5px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    padding-right: 0px;
+    text-align: start;
+  }
+  .footer__contenedorrrss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer__contenedorrrss__logos {
+    margin: 15px 3px 5px 3px;
+    width: 25px;
+    height: 25px;
+  }
+  /*--- Servicios ---*/
+  /*--- Ubicación ---*/
+  .ubicacion__contenedormapa__mapa {
+    width: 100%;
+    height: 25.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .ubicacion__contenedorfoto__vistaAngosturaDos {
+    width: 100%;
+    height: auto;
+  }
+  /*--- Contacto ---*/
+  .contacto__form__fieldset__textarea {
+    width: 120%;
+  }
+  /*--- Nosotros ---*/
+  .nosotros__parrafo {
+    padding-right: 0px;
+  }
+}
+
+/*---------------- Servicios ----------------*/
+.servicios {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.servicios__titulo {
+  -ms-grid-column-align: start;
+  justify-self: start;
+}
+
+.servicios__amenities {
+  padding-left: 15px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  border-right: 0px;
+  -webkit-animation-name: show;
+  animation-name: show;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__amenities {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__amenities {
+    padding-bottom: 10px;
+  }
+}
+
+.servicios__amenities .servicios__subtitulos {
+  padding-top: 0px;
+  padding-bottom: 2px;
+  color: #77091b;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.servicios__primerinterior {
+  z-index: 20;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__primerinterior {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__primerinterior {
+    z-index: 20;
+    height: 22rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.servicios__primerinterior__foto {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__primerinterior__foto {
+    width: 100%;
+    height: auto;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__primerinterior__foto {
+    width: 100%;
+    height: auto;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.servicios__primerinterior__foto:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 4px solid #77091b;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__primerinterior__foto:hover {
+    -webkit-transform: none;
+    transform: none;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__primerinterior__foto:hover {
+    -webkit-transform: none;
+    transform: none;
+    border: none;
+  }
+}
+
+.servicios__segundointerior {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  z-index: 11;
+}
+
+.servicios__segundointerior__foto {
+  width: 100%;
+  height: 440.4px;
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+  z-index: 15;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__segundointerior__foto {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 1.5s ease-in;
+    transition: all 1.5s ease-in;
+    z-index: 15;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__segundointerior__foto {
+    width: 100%;
+    height: auto;
+    z-index: 15;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.servicios__segundointerior__foto:hover {
+  width: 100%;
+  height: 550.5px;
+  border: 4px solid #77091b;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__segundointerior__foto:hover {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__segundointerior__foto:hover {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+}
+
+.servicios__tarifas {
+  z-index: 5;
+  padding-left: 40px;
+  margin-top: 15px;
+  -webkit-animation-name: precios;
+  animation-name: precios;
+  -webkit-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__tarifas {
+    padding-left: 0px;
+    margin-top: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation-name: precios;
+    animation-name: precios;
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-timing-function: none;
+    animation-timing-function: none;
+    -webkit-animation-iteration-count: none;
+    animation-iteration-count: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__tarifas {
+    padding-left: 5px;
+    margin-top: 0px;
+  }
+}
+
+.servicios__tarifas .servicios__subtitulos {
+  padding-top: 0px;
+  padding-bottom: 2px;
+  color: #77091b;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__tarifas .accordion-body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.servicios__tarifas__tabla {
+  border: black;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__tarifas__tabla {
+    font-size: 0.82rem;
+  }
+}
+
+.servicios__tarifas__tabla__cuerpo {
+  border-color: black;
+}
+
+@-webkit-keyframes precios {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes precios {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.servicios__pileta__foto {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__pileta__foto {
+    display: hide;
+  }
+}
+
+.servicios__contenedorvideo {
+  -ms-grid-column-align: start;
+  justify-self: start;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__contenedorvideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__contenedorvideo {
+    width: 100%;
+    height: 22.5rem;
+  }
+}
+
+.servicios__contenedorvideo__video {
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .servicios__contenedorvideo__video {
+    width: 100%;
+    height: 12rem;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__contenedorvideo__video {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+  }
+}
+
+/*---------------- Ubicación ----------------*/
+.ubicacion {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.ubicacion__contenedormapa__mapa {
+  width: 100%;
+  height: 500px;
+}
+
+.ubicacion__contenedorfoto__vistaAngosturaDos {
+  width: 100%;
+  height: 26rem;
+}
+
+/*---------------- Contacto ----------------*/
+.contacto {
+  width: 100%;
+}
+
+.contacto__form__fieldset {
+  border-color: black;
+  border-width: 1px;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  margin-right: 350px;
+}
+
+.contacto__form__fieldset label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contacto__form__fieldset label input {
+  padding: 5px;
+  margin-top: 2.5px;
+  margin-right: 1.5px;
+  margin-bottom: 5px;
+  border-color: black;
+  border-width: 1px;
+  background-color: #ebc263;
+}
+
+.contacto__form__fieldset label select {
+  margin-top: 7px;
+  margin-bottom: 15px;
+  background-color: #ebc263;
+}
+
+.contacto__form__fieldset__textarea {
+  padding: 7px 0px 0px 7px;
+  width: auto;
+  background-color: #ebc263;
+}
+
+.contacto__form__fieldset input {
+  padding: 5px;
+  margin-top: 2.5px;
+  margin-right: 1.5px;
+  margin-bottom: 5px;
+  border-color: black;
+  border-width: 1px;
+  background-color: #ebc263;
+}
+
+/*---------------- Nosotros ----------------*/
+.nosotros {
+  height: auto;
+  width: 100%;
+}
+
+.nosotros__parrafo {
+  color: #055f14;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.nosotros__contenedorfoto {
+  width: 100%;
+}
+
+.nosotros__contenedorfoto__foto {
+  width: 100%;
+  height: auto;
+  padding-bottom: 25px;
+  margin-top: 5px;
+}
+
+/*---------------- MEDIA QUERIES ----------------*/
+@media screen and (max-width: 767px) {
+  /*--- Header ---*/
+  .header .nav .nav__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+  .header .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-flow: none;
+    flex-flow: none;
+    gap: 1.2rem;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .header .nav .nav__list .nav__item {
+    padding: 0px 0px;
+  }
+  /*--- Index ---*/
+  .index {
+    width: 100%;
+  }
+  .index__contenedorleyenda {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .index__contenedorleyenda__leyenda {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    padding-top: 15px;
+  }
+  .index__carousel {
+    margin-bottom: 10px;
+  }
+  .index__contenedorvideo {
+    width: 90%;
+  }
+  .index__contenedorvideo__video {
+    width: 100%;
+    height: 10rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  /*--- Footer ---*/
+  .footer {
+    gap: 0.75rem;
+    padding-top: 0 px;
+  }
+  .footer__contenedorCottage__cottage {
+    margin-top: 2px;
+    width: 70px;
+    height: 70px;
+  }
+  .footer__contenedorestexto__texto {
+    margin: 5px;
+    text-align: start;
+    padding-top: 5px;
+    padding-bottom: 2px;
+  }
+  .footer__contenedorrrss__logos {
+    margin: 0px 5px;
+    width: 35px;
+    height: 35px;
+  }
+  /*------ Servicios ------*/
+  /*--- Ubicación ---*/
+  .ubicacion__contenedormapa__mapa {
+    width: 100%;
+    height: 18.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .ubicacion__contenedorfoto__vistaAngosturaDos {
+    width: 100%;
+    height: auto;
+  }
+  /*--- Contacto ---*/
+  .contacto__form__fieldset {
+    margin-right: 0px;
+  }
+  .contacto__form__fieldset__textarea {
+    width: 100%;
+  }
+  /*--- Nosotros ---*/
+  .nosotros__parrafo {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*--- Header ---*/
+  .header .nav .nav__logo {
+    width: 6rem;
+    height: 6rem;
+  }
+  .header .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-flow: none;
+    flex-flow: none;
+    gap: 1.2rem;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .header .nav .nav__list .nav__item {
+    padding: 0px;
+  }
+  /*--- Index ---*/
+  .index {
+    width: 100%;
+  }
+  .index__contenedorleyenda {
+    margin-bottom: 10px;
+  }
+  .index__contenedorleyenda__leyenda {
+    font-size: 100%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0px 5px;
+    padding-top: 15px;
+  }
+  .index__carousel {
+    width: 100%;
+  }
+  .index__contenedorvideo {
+    width: 100%;
+    height: 22.5rem;
+  }
+  .index__contenedorvideo__video {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+  }
+  /*----- Footer -----*/
+  .footer {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .footer__contenedorestexto {
+    width: 25.437%;
+  }
+  .footer__contenedorestexto__texto {
+    margin: 5px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    padding-right: 0px;
+    text-align: start;
+  }
+  .footer__contenedorrrss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer__contenedorrrss__logos {
+    margin: 15px 3px 5px 3px;
+    width: 25px;
+    height: 25px;
+  }
+  /*--- Servicios ---*/
+  /*--- Ubicación ---*/
+  .ubicacion__contenedormapa__mapa {
+    width: 100%;
+    height: 25.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .ubicacion__contenedorfoto__vistaAngosturaDos {
+    width: 100%;
+    height: auto;
+  }
+  /*--- Contacto ---*/
+  .contacto__form__fieldset__textarea {
+    width: 120%;
+  }
+  /*--- Nosotros ---*/
+  .nosotros__parrafo {
+    padding-right: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

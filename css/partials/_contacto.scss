@@ -1,0 +1,61 @@
+@import "./variables";
+
+/*---------------- Contacto ----------------*/
+.contacto {
+  width: 100%;
+
+  &__form__fieldset {
+    border-color: $black;
+    border-width: 1px;
+
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-bottom: $pb-standard * 2;
+    margin-right: 350px;
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+
+      input {
+        padding: 5px;
+
+        margin-top: 2.5px;
+        margin-right: 1.5px;
+        margin-bottom: 5px;
+
+        border-color: $black;
+
+        border-width: 1px;
+
+        background-color: $earthy;
+      }
+
+      select {
+        margin-top: 7px;
+        margin-bottom: 15px;
+        background-color: $earthy;
+      }
+    }
+
+    &__textarea {
+      padding: 7px 0px 0px 7px;
+      width: auto;
+      background-color: $earthy;
+    }
+
+    input {
+      padding: 5px;
+
+      margin-top: 2.5px;
+      margin-right: 1.5px;
+      margin-bottom: 5px;
+
+      border-color: $black;
+
+      border-width: 1px;
+
+      background-color: $earthy;
+    }
+  }
+}

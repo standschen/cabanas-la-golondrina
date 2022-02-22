@@ -1,0 +1,68 @@
+@import "./variables";
+
+/*---------------- Footer ----------------*/
+
+.footer {
+  background: rgb(119, 9, 27);
+  background: -moz-linear-gradient(90deg, rgba(119, 9, 27, 1) 15%, rgba(199, 7, 30, 1) 72%, rgba(193, 31, 31, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(119, 9, 27, 1) 15%, rgba(199, 7, 30, 1) 72%, rgba(193, 31, 31, 1) 100%);
+  background: linear-gradient(90deg, rgba(119, 9, 27, 1) 15%, rgba(199, 7, 30, 1) 72%, rgba(193, 31, 31, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#77091b",endColorstr="#c11f1f",GradientType=1);
+
+  width: 100%;
+
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+
+  &__contenedorCottage {
+    &__cottage {
+      width: 90px;
+      height: 90px;
+
+      margin-top: 20px;
+      flex-basis: 90px;
+      flex-shrink: 5;
+    }
+  }
+
+  &__contenedorestexto {
+    &__texto {
+      color: $earthy;
+
+      font-style: italic;
+      letter-spacing: 0.3px;
+      text-align: justify;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      margin-right: 7px;
+      margin-left: 15px;
+      padding-bottom: $pb-standard;
+      padding-top: 0px;
+      padding-right: 10px;
+      line-height: 30px;
+
+      flex-shrink: 1;
+    }
+  }
+
+  &__contenedorrrss {
+    &__logos {
+      width: 45px;
+      height: 45px;
+
+      background-color: rgba(153, 7, 30, 1);
+      /*#77091b;*/
+      margin-top: 17px;
+
+      flex-shrink: 2;
+    }
+  }
+}

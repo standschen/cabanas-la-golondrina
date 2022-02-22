@@ -1,0 +1,43 @@
+@import "./variables";
+
+/*---------------- Index ----------------*/
+
+.index {
+  width: 100%;
+  height: auto;
+
+  &__contenedorleyenda {
+    &__leyenda {
+      color: $navyblue;
+
+      font-size: 1.182rem;
+
+      font-weight: bold;
+
+      text-align: center;
+
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__carousel {
+    margin-bottom: 30px;
+
+    /* resolver lógica de left y right */
+    .carousel-control-prev {
+      left: 0;
+      background-image: if($enable-gradients, linear-gradient(90deg, rgba($black, 0.25), rgba($black, 0.001)), null);
+    }
+    .carousel-control-next {
+      right: 0;
+      background-image: if($enable-gradients, linear-gradient(270deg, rgba($black, 0.25), rgba($black, 0.001)), null);
+    }
+  }
+
+  &__contenedorvideo {
+    &__video {
+      padding-bottom: $pb-standard;
+    }
+  }
+}

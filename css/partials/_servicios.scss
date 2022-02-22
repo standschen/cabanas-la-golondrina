@@ -1,0 +1,255 @@
+@import "./variables";
+@import "./media-queries";
+
+/*---------------- Servicios ----------------*/
+
+.servicios {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  &__titulo {
+    justify-self: start;
+  }
+
+  &__amenities {
+    padding-left: 15px;
+    padding-bottom: $pb-standard * 3;
+    padding-top: 0px;
+    padding-right: 0px;
+
+    margin-right: 0px;
+    border-right: 0px;
+
+    animation-name: show;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+
+    @include mobile {
+      padding-left: 0px;
+      padding-bottom: 0px;
+    }
+
+    @include tablet {
+      padding-bottom: $pb-standard;
+    }
+
+    .servicios__subtitulos {
+      padding-top: 0px;
+      padding-bottom: $pb-standard/5;
+
+      color: $blood;
+    }
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__primerinterior {
+    z-index: 20;
+
+    @include mobile {
+      margin-bottom: 1rem;
+    }
+
+    @include tablet {
+      z-index: 20;
+      height: 22rem;
+      display: flex;
+    }
+
+    &__foto {
+      width: 100%;
+      height: auto;
+
+      transition: all 1.5s ease-in;
+
+      @include mobile {
+        width: 100%;
+        height: auto;
+
+        transition: none;
+      }
+
+      @include tablet {
+        width: 100%;
+        height: auto;
+        align-self: center;
+        transition: none;
+      }
+    }
+
+    &__foto:hover {
+      transform: scale(1.3);
+      border: 4px solid rgb(119, 9, 27);
+
+      @include mobile {
+        transform: none;
+        border: none;
+      }
+
+      @include tablet {
+        transform: none;
+        border: none;
+      }
+    }
+  }
+
+  &__segundointerior {
+    justify-self: center;
+    z-index: 11;
+
+    &__foto {
+      width: 100%;
+      height: 440.4px;
+      transition: all 1.5s ease-in;
+      z-index: 15;
+
+      @include mobile {
+        width: 100%;
+        height: auto;
+        transition: all 1.5s ease-in;
+        z-index: 15;
+        transition: none;
+      }
+
+      @include tablet {
+        width: 100%;
+        height: auto;
+        z-index: 15;
+        transition: none;
+      }
+    }
+
+    &__foto:hover {
+      width: 100%;
+      height: 550.5px;
+      border: 4px solid rgb(119, 9, 27);
+
+      @include mobile {
+        width: 100%;
+        height: auto;
+        border: none;
+      }
+
+      @include tablet {
+        width: 100%;
+        height: auto;
+        border: none;
+      }
+    }
+  }
+
+  &__tarifas {
+    z-index: 5;
+    padding-left: 40px;
+    margin-top: 15px;
+    animation-name: precios;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+
+    @include mobile {
+      padding-left: 0px;
+      margin-top: 1.5rem;
+      display: flex;
+
+      animation-name: precios;
+      animation-duration: 0s;
+      animation-timing-function: none;
+      animation-iteration-count: none;
+    }
+
+    @include tablet {
+      padding-left: 5px;
+      margin-top: 0px;
+    }
+
+    .servicios__subtitulos {
+      padding-top: 0px;
+      padding-bottom: $pb-standard/5;
+
+      color: $blood;
+    }
+
+    .accordion-body {
+      @include mobile {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+
+    &__tabla {
+      border: $black;
+
+      @include mobile {
+        font-size: 0.82rem;
+      }
+
+      &__cuerpo {
+        border-color: $black;
+      }
+    }
+  }
+
+  @keyframes precios {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__pileta {
+    &__foto {
+      width: 100%;
+      height: auto;
+
+      @include mobile {
+        display: hide;
+      }
+    }
+  }
+
+  &__contenedorvideo {
+    justify-self: start;
+
+    @include mobile {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include tablet {
+      width: 100%;
+
+      height: 22.5rem;
+    }
+
+    &__video {
+      padding-bottom: $pb-standard;
+      margin-bottom: 5px;
+
+      @include mobile {
+        width: 100%;
+        height: 12rem;
+        padding-bottom: $pb-standard;
+      }
+
+      @include tablet {
+        width: 100%;
+        height: 100%;
+        padding-bottom: $pb-standard;
+      }
+    }
+  }
+}
