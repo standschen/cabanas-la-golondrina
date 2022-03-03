@@ -29,10 +29,12 @@
     @include mobile {
       padding-left: 0px;
       padding-bottom: 0px;
+      transition: none !important;
     }
 
     @include tablet {
       padding-bottom: $pb-standard;
+      transition: none !important;
     }
 
     .servicios__subtitulos {
@@ -84,6 +86,7 @@
         height: auto;
         align-self: center;
         transition: none;
+        display: none;
       }
     }
 
@@ -99,6 +102,14 @@
       @include tablet {
         transform: none;
         border: none;
+      }
+    }
+
+    &__foto--tablet {
+      display: none;
+
+      @include tablet {
+        display: block;
       }
     }
   }
@@ -162,15 +173,13 @@
       margin-top: 1.5rem;
       display: flex;
 
-      animation-name: precios;
-      animation-duration: 0s;
-      animation-timing-function: none;
-      animation-iteration-count: none;
+      transition: none !important;
     }
 
     @include tablet {
       padding-left: 5px;
       margin-top: 0px;
+      transition: none !important;
     }
 
     .servicios__subtitulos {

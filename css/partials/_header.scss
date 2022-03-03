@@ -1,6 +1,7 @@
-/*---------------- Header ----------------*/
-
 @import "./variables";
+@import "./media-queries";
+
+/*---------------- Header ----------------*/
 
 .header {
   .nav {
@@ -20,6 +21,16 @@
 
       width: 8rem;
       height: 8rem;
+
+      @include mobile {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      @include tablet {
+        width: 6rem;
+        height: 6rem;
+      }
     }
 
     .nav__list {
@@ -35,6 +46,20 @@
       gap: 2rem;
       flex-wrap: wrap;
 
+      @include mobile {
+        flex-direction: column;
+        flex-flow: none;
+        gap: 1.2rem;
+        justify-content: space-evenly;
+      }
+
+      @include tablet {
+        flex-direction: column;
+        flex-flow: none;
+        gap: 1.2rem;
+        justify-content: space-evenly;
+      }
+
       .nav__item {
         list-style-type: none;
         list-style-position: outside;
@@ -45,6 +70,14 @@
         padding: 8px 0px;
 
         display: inline-block;
+
+        @include mobile {
+          padding: 0px;
+        }
+
+        @include tablet {
+          padding: 0px;
+        }
 
         .nav__link {
           color: $earthy !important;

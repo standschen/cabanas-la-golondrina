@@ -6,206 +6,8 @@
           box-sizing: border-box;
 }
 
-/*------------------- Estilos Generales -----------------------*/
 /*---------------- MEDIA QUERIES ----------------*/
-@media screen and (max-width: 767px) {
-  /*--- Header ---*/
-  .header .nav .nav__logo {
-    width: 5rem;
-    height: 5rem;
-  }
-  .header .nav .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-flow: none;
-        flex-flow: none;
-    gap: 1.2rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .header .nav .nav__list .nav__item {
-    padding: 0px 0px;
-  }
-  /*--- Index ---*/
-  .index {
-    width: 100%;
-  }
-  .index__contenedorleyenda {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .index__contenedorleyenda__leyenda {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 0px 5px;
-    padding-top: 15px;
-  }
-  .index__carousel {
-    margin-bottom: 10px;
-  }
-  .index__contenedorvideo {
-    width: 92%;
-  }
-  .index__contenedorvideo__video {
-    width: 100%;
-    height: 10rem;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-  /*--- Footer ---*/
-  .footer {
-    gap: 0.75rem;
-    padding-top: 0 px;
-  }
-  .footer__contenedorCottage__cottage {
-    margin-top: 2px;
-    width: 70px;
-    height: 70px;
-  }
-  .footer__contenedorestexto__texto {
-    margin: 5px;
-    text-align: start;
-    padding-top: 5px;
-    padding-bottom: 2px;
-  }
-  .footer__contenedorrrss__logos {
-    margin: 0px 5px;
-    width: 35px;
-    height: 35px;
-  }
-  /*------ Servicios ------*/
-  /*--- Ubicación ---*/
-  .ubicacion__contenedormapa__mapa {
-    width: 100%;
-    height: 18.75rem;
-    margin-bottom: 0.75rem;
-  }
-  .ubicacion__contenedorfoto__vistaAngosturaDos {
-    width: 100%;
-    height: auto;
-  }
-  /*--- Contacto ---*/
-  .contacto__form__fieldset {
-    margin-right: 0px;
-  }
-  .contacto__form__fieldset__textarea {
-    width: 100%;
-  }
-  /*--- Nosotros ---*/
-  .nosotros__parrafo {
-    padding-right: 0px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /*--- Header ---*/
-  .header .nav .nav__logo {
-    width: 6rem;
-    height: 6rem;
-  }
-  .header .nav .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-flow: none;
-        flex-flow: none;
-    gap: 1.2rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .header .nav .nav__list .nav__item {
-    padding: 0px;
-  }
-  /*--- Index ---*/
-  .index {
-    width: 100%;
-  }
-  .index__contenedorleyenda {
-    margin-bottom: 10px;
-  }
-  .index__contenedorleyenda__leyenda {
-    font-size: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 0px 5px;
-    padding-top: 15px;
-  }
-  .index__carousel {
-    width: 100%;
-  }
-  .index__contenedorvideo {
-    width: 100%;
-    height: 22.5rem;
-  }
-  .index__contenedorvideo__video {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 10px;
-  }
-  /*----- Footer -----*/
-  .footer {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 1rem;
-  }
-  .footer__contenedorestexto {
-    width: 25.437%;
-  }
-  .footer__contenedorestexto__texto {
-    margin: 5px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 3px;
-    padding-right: 0px;
-    text-align: start;
-  }
-  .footer__contenedorrrss {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer__contenedorrrss__logos {
-    margin: 15px 3px 5px 3px;
-    width: 25px;
-    height: 25px;
-  }
-  /*--- Servicios ---*/
-  /*--- Ubicación ---*/
-  .ubicacion__contenedormapa__mapa {
-    width: 100%;
-    height: 25.75rem;
-    margin-bottom: 0.75rem;
-  }
-  .ubicacion__contenedorfoto__vistaAngosturaDos {
-    width: 100%;
-    height: auto;
-  }
-  /*--- Contacto ---*/
-  .contacto__form__fieldset__textarea {
-    width: 120%;
-  }
-  /*--- Nosotros ---*/
-  .nosotros__parrafo {
-    padding-right: 0px;
-  }
-}
-
+/*------------------- Estilos Generales -----------------------*/
 html {
   font-size: 16px;
 }
@@ -303,6 +105,7 @@ hr {
   }
 }
 
+/*---------------- MEDIA QUERIES ----------------*/
 /*---------------- Header ----------------*/
 .header .nav {
   background-image: url(../assets/img/arrayanes1.jpg);
@@ -317,6 +120,20 @@ hr {
   opacity: 0.75;
   width: 8rem;
   height: 8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .header .nav .nav__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header .nav .nav__logo {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 .header .nav .nav__list {
@@ -344,6 +161,36 @@ hr {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .header .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: none;
+        flex-flow: none;
+    gap: 1.2rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: none;
+        flex-flow: none;
+    gap: 1.2rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .header .nav .nav__list .nav__item {
   list-style-type: none;
   list-style-position: outside;
@@ -351,6 +198,18 @@ hr {
   position: relative;
   padding: 8px 0px;
   display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .header .nav .nav__list .nav__item {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header .nav .nav__list .nav__item {
+    padding: 0px;
+  }
 }
 
 .header .nav .nav__list .nav__item .nav__link {
@@ -368,6 +227,7 @@ hr {
   background-color: #77091b;
 }
 
+/*---------------- MEDIA QUERIES ----------------*/
 /*---------------- Footer ----------------*/
 .footer {
   background: #77091b;
@@ -396,6 +256,23 @@ hr {
   gap: 2rem;
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    gap: 0.75rem;
+    padding-top: 0 px;
+    background: #77091b;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
 .footer__contenedorCottage__cottage {
   width: 90px;
   height: 90px;
@@ -404,6 +281,20 @@ hr {
       flex-basis: 90px;
   -ms-flex-negative: 5;
       flex-shrink: 5;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__contenedorCottage__cottage {
+    margin-top: 2px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer__contenedorestexto {
+    width: 25.437%;
+  }
 }
 
 .footer__contenedorestexto__texto {
@@ -423,6 +314,38 @@ hr {
       flex-shrink: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__contenedorestexto__texto {
+    margin: 5px;
+    text-align: start;
+    padding-top: 5px;
+    padding-bottom: 2px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer__contenedorestexto__texto {
+    margin: 5px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    padding-right: 0px;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer__contenedorrrss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer__contenedorrrss__logos {
   width: 45px;
   height: 45px;
@@ -433,10 +356,53 @@ hr {
       flex-shrink: 2;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__contenedorrrss__logos {
+    margin: 0px 5px;
+    width: 35px;
+    height: 35px;
+    background-color: #77091b;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer__contenedorrrss__logos {
+    margin: 15px 3px 5px 3px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/*---------------- MEDIA QUERIES ----------------*/
 /*---------------- Index ----------------*/
 .index {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .index {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .index {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .index__contenedorleyenda {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .index__contenedorleyenda {
+    margin-bottom: 10px;
+  }
 }
 
 .index__contenedorleyenda__leyenda {
@@ -448,57 +414,7 @@ hr {
   margin-bottom: 15px;
 }
 
-.index__carousel {
-  margin-bottom: 30px;
-  /* resolver lógica de left y right */
-}
-
-.index__carousel .carousel-control-prev {
-  left: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.001)));
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.001));
-}
-
-.index__carousel .carousel-control-next {
-  right: 0;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.001)));
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.001));
-}
-
-.index__contenedorvideo__video {
-  padding-bottom: 10px;
-}
-
-/*---------------- MEDIA QUERIES ----------------*/
 @media screen and (max-width: 767px) {
-  /*--- Header ---*/
-  .header .nav .nav__logo {
-    width: 5rem;
-    height: 5rem;
-  }
-  .header .nav .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-flow: none;
-        flex-flow: none;
-    gap: 1.2rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .header .nav .nav__list .nav__item {
-    padding: 0px 0px;
-  }
-  /*--- Index ---*/
-  .index {
-    width: 100%;
-  }
-  .index__contenedorleyenda {
-    width: 100%;
-    margin-bottom: 10px;
-  }
   .index__contenedorleyenda__leyenda {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -508,91 +424,9 @@ hr {
     padding: 0px 5px;
     padding-top: 15px;
   }
-  .index__carousel {
-    margin-bottom: 10px;
-  }
-  .index__contenedorvideo {
-    width: 92%;
-  }
-  .index__contenedorvideo__video {
-    width: 100%;
-    height: 10rem;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-  /*--- Footer ---*/
-  .footer {
-    gap: 0.75rem;
-    padding-top: 0 px;
-  }
-  .footer__contenedorCottage__cottage {
-    margin-top: 2px;
-    width: 70px;
-    height: 70px;
-  }
-  .footer__contenedorestexto__texto {
-    margin: 5px;
-    text-align: start;
-    padding-top: 5px;
-    padding-bottom: 2px;
-  }
-  .footer__contenedorrrss__logos {
-    margin: 0px 5px;
-    width: 35px;
-    height: 35px;
-  }
-  /*------ Servicios ------*/
-  /*--- Ubicación ---*/
-  .ubicacion__contenedormapa__mapa {
-    width: 100%;
-    height: 18.75rem;
-    margin-bottom: 0.75rem;
-  }
-  .ubicacion__contenedorfoto__vistaAngosturaDos {
-    width: 100%;
-    height: auto;
-  }
-  /*--- Contacto ---*/
-  .contacto__form__fieldset {
-    margin-right: 0px;
-  }
-  .contacto__form__fieldset__textarea {
-    width: 100%;
-  }
-  /*--- Nosotros ---*/
-  .nosotros__parrafo {
-    padding-right: 0px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /*--- Header ---*/
-  .header .nav .nav__logo {
-    width: 6rem;
-    height: 6rem;
-  }
-  .header .nav .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-flow: none;
-        flex-flow: none;
-    gap: 1.2rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .header .nav .nav__list .nav__item {
-    padding: 0px;
-  }
-  /*--- Index ---*/
-  .index {
-    width: 100%;
-  }
-  .index__contenedorleyenda {
-    margin-bottom: 10px;
-  }
   .index__contenedorleyenda__leyenda {
     font-size: 100%;
     -ms-flex-item-align: center;
@@ -603,71 +437,61 @@ hr {
     padding: 0px 5px;
     padding-top: 15px;
   }
+}
+
+.index__carousel {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .index__carousel {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .index__carousel {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .index__contenedorvideo {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .index__contenedorvideo {
     width: 100%;
     height: 22.5rem;
   }
+}
+
+.index__contenedorvideo__video {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .index__contenedorvideo__video {
+    width: 100%;
+    height: 12rem;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .index__contenedorvideo__video {
     width: 100%;
     height: 100%;
     padding-bottom: 10px;
   }
-  /*----- Footer -----*/
-  .footer {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 1rem;
-  }
-  .footer__contenedorestexto {
-    width: 25.437%;
-  }
-  .footer__contenedorestexto__texto {
-    margin: 5px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 3px;
-    padding-right: 0px;
-    text-align: start;
-  }
-  .footer__contenedorrrss {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer__contenedorrrss__logos {
-    margin: 15px 3px 5px 3px;
-    width: 25px;
-    height: 25px;
-  }
-  /*--- Servicios ---*/
-  /*--- Ubicación ---*/
-  .ubicacion__contenedormapa__mapa {
-    width: 100%;
-    height: 25.75rem;
-    margin-bottom: 0.75rem;
-  }
-  .ubicacion__contenedorfoto__vistaAngosturaDos {
-    width: 100%;
-    height: auto;
-  }
-  /*--- Contacto ---*/
-  .contacto__form__fieldset__textarea {
-    width: 120%;
-  }
-  /*--- Nosotros ---*/
-  .nosotros__parrafo {
-    padding-right: 0px;
-  }
 }
 
+/*---------------- MEDIA QUERIES ----------------*/
 /*---------------- Servicios ----------------*/
 .servicios {
   width: 100%;
@@ -701,12 +525,16 @@ hr {
   .servicios__amenities {
     padding-left: 0px;
     padding-bottom: 0px;
+    -webkit-transition: none !important;
+    transition: none !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .servicios__amenities {
     padding-bottom: 10px;
+    -webkit-transition: none !important;
+    transition: none !important;
   }
 }
 
@@ -779,6 +607,7 @@ hr {
         align-self: center;
     -webkit-transition: none;
     transition: none;
+    display: none;
   }
 }
 
@@ -801,6 +630,16 @@ hr {
     -webkit-transform: none;
             transform: none;
     border: none;
+  }
+}
+
+.servicios__primerinterior__foto--tablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .servicios__primerinterior__foto--tablet {
+    display: block;
   }
 }
 
@@ -883,14 +722,8 @@ hr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation-name: precios;
-            animation-name: precios;
-    -webkit-animation-duration: 0s;
-            animation-duration: 0s;
-    -webkit-animation-timing-function: none;
-            animation-timing-function: none;
-    -webkit-animation-iteration-count: none;
-            animation-iteration-count: none;
+    -webkit-transition: none !important;
+    transition: none !important;
   }
 }
 
@@ -898,6 +731,8 @@ hr {
   .servicios__tarifas {
     padding-left: 5px;
     margin-top: 0px;
+    -webkit-transition: none !important;
+    transition: none !important;
   }
 }
 
@@ -1001,6 +836,7 @@ hr {
   }
 }
 
+/*---------------- MEDIA QUERIES ----------------*/
 /*---------------- Ubicación ----------------*/
 .ubicacion {
   width: 100%;
@@ -1008,9 +844,31 @@ hr {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 767px) {
+  .ubicacion {
+    margin-bottom: 1.5rem;
+  }
+}
+
 .ubicacion__contenedormapa__mapa {
   width: 100%;
   height: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .ubicacion__contenedormapa__mapa {
+    width: 100%;
+    height: 18.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ubicacion__contenedormapa__mapa {
+    width: 100%;
+    height: 25.75rem;
+    margin-bottom: 0.75rem;
+  }
 }
 
 .ubicacion__contenedorfoto__vistaAngosturaDos {
@@ -1018,6 +876,21 @@ hr {
   height: 26rem;
 }
 
+@media screen and (max-width: 767px) {
+  .ubicacion__contenedorfoto__vistaAngosturaDos {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ubicacion__contenedorfoto__vistaAngosturaDos {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*---------------- MEDIA QUERIES ----------------*/
 /*---------------- Contacto ----------------*/
 .contacto {
   width: 100%;
@@ -1030,6 +903,13 @@ hr {
   padding-left: 0px;
   padding-bottom: 20px;
   margin-right: 350px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacto__form__fieldset {
+    margin-right: 0px;
+    padding-bottom: 10px;
+  }
 }
 
 .contacto__form__fieldset label {
@@ -1059,6 +939,18 @@ hr {
   background-color: #ebc263;
 }
 
+@media screen and (max-width: 767px) {
+  .contacto__form__fieldset__textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contacto__form__fieldset__textarea {
+    width: 120%;
+  }
+}
+
 .contacto__form__fieldset input {
   padding: 5px;
   margin-top: 2.5px;
@@ -1069,6 +961,7 @@ hr {
   background-color: #ebc263;
 }
 
+/*---------------- MEDIA QUERIES ----------------*/
 /*---------------- Nosotros ----------------*/
 .nosotros {
   height: auto;
@@ -1085,6 +978,18 @@ hr {
   letter-spacing: 0.5px;
 }
 
+@media screen and (max-width: 767px) {
+  .nosotros__parrafo {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nosotros__parrafo {
+    padding-right: 0px;
+  }
+}
+
 .nosotros__contenedorfoto {
   width: 100%;
 }
@@ -1096,202 +1001,12 @@ hr {
   margin-top: 5px;
 }
 
-/*---------------- MEDIA QUERIES ----------------*/
 @media screen and (max-width: 767px) {
-  /*--- Header ---*/
-  .header .nav .nav__logo {
-    width: 5rem;
-    height: 5rem;
-  }
-  .header .nav .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-flow: none;
-        flex-flow: none;
-    gap: 1.2rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .header .nav .nav__list .nav__item {
-    padding: 0px 0px;
-  }
-  /*--- Index ---*/
-  .index {
-    width: 100%;
-  }
-  .index__contenedorleyenda {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .index__contenedorleyenda__leyenda {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 0px 5px;
-    padding-top: 15px;
-  }
-  .index__carousel {
-    margin-bottom: 10px;
-  }
-  .index__contenedorvideo {
-    width: 92%;
-  }
-  .index__contenedorvideo__video {
-    width: 100%;
-    height: 10rem;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-  /*--- Footer ---*/
-  .footer {
-    gap: 0.75rem;
-    padding-top: 0 px;
-  }
-  .footer__contenedorCottage__cottage {
-    margin-top: 2px;
-    width: 70px;
-    height: 70px;
-  }
-  .footer__contenedorestexto__texto {
-    margin: 5px;
-    text-align: start;
-    padding-top: 5px;
-    padding-bottom: 2px;
-  }
-  .footer__contenedorrrss__logos {
-    margin: 0px 5px;
-    width: 35px;
-    height: 35px;
-  }
-  /*------ Servicios ------*/
-  /*--- Ubicación ---*/
-  .ubicacion__contenedormapa__mapa {
-    width: 100%;
-    height: 18.75rem;
-    margin-bottom: 0.75rem;
-  }
-  .ubicacion__contenedorfoto__vistaAngosturaDos {
-    width: 100%;
-    height: auto;
-  }
-  /*--- Contacto ---*/
-  .contacto__form__fieldset {
-    margin-right: 0px;
-  }
-  .contacto__form__fieldset__textarea {
-    width: 100%;
-  }
-  /*--- Nosotros ---*/
-  .nosotros__parrafo {
+  .nosotros__contenedorfoto__foto {
     padding-right: 0px;
+    padding-bottom: 1rem;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /*--- Header ---*/
-  .header .nav .nav__logo {
-    width: 6rem;
-    height: 6rem;
-  }
-  .header .nav .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-flow: none;
-        flex-flow: none;
-    gap: 1.2rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .header .nav .nav__list .nav__item {
-    padding: 0px;
-  }
-  /*--- Index ---*/
-  .index {
-    width: 100%;
-  }
-  .index__contenedorleyenda {
-    margin-bottom: 10px;
-  }
-  .index__contenedorleyenda__leyenda {
-    font-size: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 0px 5px;
-    padding-top: 15px;
-  }
-  .index__carousel {
-    width: 100%;
-  }
-  .index__contenedorvideo {
-    width: 100%;
-    height: 22.5rem;
-  }
-  .index__contenedorvideo__video {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 10px;
-  }
-  /*----- Footer -----*/
-  .footer {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 1rem;
-  }
-  .footer__contenedorestexto {
-    width: 25.437%;
-  }
-  .footer__contenedorestexto__texto {
-    margin: 5px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 3px;
-    padding-right: 0px;
-    text-align: start;
-  }
-  .footer__contenedorrrss {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer__contenedorrrss__logos {
-    margin: 15px 3px 5px 3px;
-    width: 25px;
-    height: 25px;
-  }
-  /*--- Servicios ---*/
-  /*--- Ubicación ---*/
-  .ubicacion__contenedormapa__mapa {
-    width: 100%;
-    height: 25.75rem;
-    margin-bottom: 0.75rem;
-  }
-  .ubicacion__contenedorfoto__vistaAngosturaDos {
-    width: 100%;
-    height: auto;
-  }
-  /*--- Contacto ---*/
-  .contacto__form__fieldset__textarea {
-    width: 120%;
-  }
-  /*--- Nosotros ---*/
-  .nosotros__parrafo {
-    padding-right: 0px;
-  }
-}
+/*---------------- MEDIA QUERIES ----------------*/
 /*# sourceMappingURL=main.css.map */

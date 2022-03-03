@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./media-queries";
 
 /*---------------- Contacto ----------------*/
 .contacto {
@@ -12,6 +13,11 @@
     padding-left: 0px;
     padding-bottom: $pb-standard * 2;
     margin-right: 350px;
+
+    @include mobile {
+      margin-right: 0px;
+      padding-bottom: $pb-standard;
+    }
 
     label {
       display: block;
@@ -42,6 +48,14 @@
       padding: 7px 0px 0px 7px;
       width: auto;
       background-color: $earthy;
+
+      @include mobile {
+        width: 100%;
+      }
+
+      @include tablet {
+        width: 120%;
+      }
     }
 
     input {
